@@ -7,7 +7,7 @@ Implemented in FastAPI.
 - despite the server is asynchronous, the Whisper model itself
 seems to sometimes process incoming requests in parallel, and sometimes - sequentially
 - we need to understand how huggingface transformers' `automatic-speech-recognition` pipeline works
-- and optimize it if possible to handle simultaneous requests more efficientlly
+- and optimize it if possible to handle simultaneous requests more efficiently
 
 ## Server endpoints
 
@@ -21,7 +21,7 @@ seems to sometimes process incoming requests in parallel, and sometimes - sequen
 
 Docker will map host's `localhost:8000` to the Server.
 
-## Run server on host maching, without docker
+## Run server on host machine, without docker
 
 1. `make install`
 2. `make run_server`

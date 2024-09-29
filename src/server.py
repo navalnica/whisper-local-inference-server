@@ -55,6 +55,7 @@ async def transcribe_audio(
         uuid = str(uuid4())
         audio_fn = f"{uuid}{ext}"
         audio_fp = os.path.join(FILES_CONFIG.dir_path, audio_fn)
+        os.makedirs(FILES_CONFIG.dir_path, exist_ok=True)
         with open(audio_fp, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 

@@ -2,8 +2,4 @@
 .vscode
 __pycache__
 
-data/*
-# exclude data/uploads to provide default dir for uploads
-!data/uploads
-# but ignore data/uploads content
-data/uploads/*
+data
