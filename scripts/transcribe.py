@@ -63,7 +63,7 @@ async def transcribe_multiple_files(fps: list[str]):
         # schedule a task to run in background.
         # it will run as soon as possible, no need to call 'await'.
         task = asyncio.create_task(transcribe_file(audio_fp=fp))
-        # add tasks to container to prevent them to be deleted by garbage collector
+        # add tasks to container to prevent them from being deleted by garbage collector
         tasks_set.add(task)
         # To prevent keeping references to finished tasks forever,
         # make each task remove its own reference from the set after completion.

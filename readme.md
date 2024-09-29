@@ -3,6 +3,8 @@
 Simple implementation of asynchronous server to run Whisper speech-to-text model locally.
 Implemented in FastAPI.
 
+By default it's configured to serve **Belarusian Whisper model**: [ales/whisper-small-belarusian](https://huggingface.co/ales/whisper-small-belarusian)
+
 ## WARNING
 - despite the server is asynchronous, the Whisper model itself
 seems to sometimes process incoming requests in parallel, and sometimes - sequentially
