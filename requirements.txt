@@ -1,0 +1,4 @@
+transformers[torch]
+pydantic
+fastapi[standard]
+python-multipart
